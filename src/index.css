@@ -1,0 +1,116 @@
+:root{
+  --primary:#1f3e72;
+  --black:#131110;
+  --secondary:rgba(225,225,225,0.78);
+  --blue-gradient:linear-gradient(97.05deg,#4066ff 3.76%,#2949c6 100%);
+  --orange-gradient:linear-gradient(270deg,#ffb978 0%, #ff922d 100%);
+  --blue:#4066ff;
+  --lightBlue:#eeeeff;
+  --shadow:0px 23px 21px -8px rgba(136,160,255,0.25);
+
+}
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  scroll-behaviour:smooth;
+}
+a{
+  color:inherit;
+  text-decoration:none;
+}
+.paddings:{
+  padding: 1.5rem;
+}
+.flexCenter {
+  display: flex;
+  row-gap: 2rem;
+  align-items:center;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+.flexStart{
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+
+}
+.flexEnd{
+  display: flex;
+  justify-content:.flex-end;
+  align-items:center;
+}
+.flexColStart{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:flex-start;
+}
+.flexColEnd{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:flex-end;
+}
+.flexColCenter {
+  display:flex;
+  justify-content:center;
+}
+.innerwidth:{
+  width: 100%;
+}
+.secondaryText{
+  color:rgb(140 139 139);
+  font-size:0.9rem;
+  
+}
+.primaryText{
+  color: #1f3e72;
+  font-weight: bold;
+  font-size:2rem;
+}
+.orangeText{
+  color:orange;
+  fontsize:1.5rem;
+  fontweight:600;
+}
+.button{
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  color:#fff;
+  background:var(--blue-gradient);
+  border:none;
+  border-radius:4px;
+  transition:all 300ms ease-in;
+}
+.button:hover{
+  cursor:pointer;
+  transform:scale(1.1);
+
+}
+/* Media queries */
+@media(min-width:1536px){
+  .innerwidth{
+    max-width:1200px;
+    margin:auto;
+  }
+}
+@media(min-width:640px){
+  .paddings{
+    padding: 4rem;
+  }
+}
+@media(min-width:1200px),@media(min-width:768px){
+  .paddings{
+    padding: 2rem;
+  }
+}
+@media (min-width:640px) {
+  .primaryText {
+  font-size:1.5rem;
+  }
+  .orangeText{
+    font-size:1.2rem;
+  }
+}
